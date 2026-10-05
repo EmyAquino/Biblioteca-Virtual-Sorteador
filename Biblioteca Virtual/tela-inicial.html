@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca Virtual</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <h1>Biblioteca Virtual</h1>
+
+  <main class="container">
+    <h2>Bem-vindo à Biblioteca Virtual</h2>
+    <p>Explore a coleção e encontre seu próximo livro favorito!</p>
+
+    <div class="tabs" aria-label="Abas da Biblioteca">
+      <button class="tab-button active" type="button" data-tab="livros">Livros</button>
+      <button class="tab-button" type="button" data-tab="sorteio">Sorteio</button>
+      <button class="tab-button" type="button" data-tab="resenha">Resenhas</button>
+      <button class="tab-button" type="button" data-tab="sobre">Sobre o projeto</button>
+    </div>
+
+    <section id="tab-livros" class="tab-panel active">
+      <div id="livroGrid" class="livro-grid" aria-live="polite"></div>
+    </section>
+
+    <section id="tab-sorteio" class="tab-panel">
+      <div class="sorteador">
+        <h3>Sorteador</h3>
+        <div class="botoes-sorteio">
+          <button id="sortearLivro" type="button">Sortear livro</button>
+        </div>
+        <div class="resultado" id="resultadoTexto">
+          Clique no botão para descobrir sua próxima leitura.
+        </div>
+      </div>
+    </section>
+
+    <section id="tab-resenha" class="tab-panel">
+      <div class="resenha-box">
+        <h3>Escrever resenha</h3>
+
+        <form id="formResenha" class="form-resenha">
+          <label class="campo">
+            <span>Livro</span>
+            <select id="livroResenha" name="livroResenha">
+              <option value="">Selecione um livro</option>
+            </select>
+          </label>
+
+          <div class="campo">
+            <span>Avaliação</span>
+            <div class="estrelas" aria-label="Avaliação em estrelas" role="radiogroup">
+              <button type="button" class="star-button" data-value="1" aria-label="1 estrela">★</button>
+              <button type="button" class="star-button" data-value="2" aria-label="2 estrelas">★</button>
+              <button type="button" class="star-button" data-value="3" aria-label="3 estrelas">★</button>
+              <button type="button" class="star-button" data-value="4" aria-label="4 estrelas">★</button>
+              <button type="button" class="star-button" data-value="5" aria-label="5 estrelas">★</button>
+            </div>
+            <input type="hidden" id="notaResenha" name="notaResenha" value="0">
+          </div>
+
+          <label class="campo">
+            <span>Sua resenha</span>
+            <textarea id="textoResenha" name="textoResenha" rows="6" placeholder="Escreva sua opinião sobre o livro..."></textarea>
+          </label>
+
+          <button type="submit" class="botao-resenha">Salvar resenha</button>
+        </form>
+
+        <div class="resenha-resultado" id="resenhaResultado">
+          <h4>Resenha atual</h4>
+          <p>Selecione um livro e escreva sua avaliação.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="tab-sobre" class="tab-panel">
+      <div class="sobre">
+        <h3>Sobre o projeto</h3>
+        <p>Este projeto é uma biblioteca virtual que permite aos usuários explorar uma coleção de livros, visualizar informações detalhadas sobre cada livro e participar de sorteios para descobrir novas leituras.</p>
+        <p>Desenvolvido com HTML, CSS e JavaScript, o projeto visa proporcionar uma experiência interativa e agradável para os amantes da leitura e poder aprender mais sobre esse mundo do desenvolvimento web.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Projeto inicial (2026).</p>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
