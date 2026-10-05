@@ -1,5 +1,0 @@
-A ideia principal do projeto é criar um sorteador para livros (ebooks) e autores,
-para fazer com que a lista de escolha seja mais aleatoria possível para poder 
-conhecer muito mais autores do que só ir pelos mesmo.
- 
- - Livros (Capas, Páginas, Autores, Ano)
