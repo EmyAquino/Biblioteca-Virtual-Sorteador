@@ -7,7 +7,7 @@ O projeto "Biblioteca Virtual" foi desenvolvido por mim, como forma de aprendiza
 - Sorteio da próxima leitura;
 - Resenha do livro.
 
-A ideia principal é ir colocando os livros por Java Script mas com certeza irá ter melhoras durante a criação do projeto
+A ideia principal é ir colocando os livros por JavaScript mas com certeza irá ter melhoras durante a criação do projeto
 
 Dentro da pasta "Biblioteca Virtual", irá conter três páginas:
 - Html
